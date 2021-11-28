@@ -1,3 +1,5 @@
+import datetime
+import os
 import os.path as path
 
 path_name = '~/file.txt'
@@ -26,3 +28,8 @@ print(path.join(path_name2, "Data", "/file.txt"))
 # 最后一个文件为空
 print(path.join(path_name2, "Data", "Documents", ""))
 # /Users/{username}/PycharmProjects/lessonProject/Data/Documents/
+
+##########################################################################################
+path = "../Data/file/file2.txt"
+nowTime = datetime.datetime.now().strftime("%Y-%m-%d")
+os.rename(path, '../Data/file/file1.txt' + ".bak-%s" % nowTime)
