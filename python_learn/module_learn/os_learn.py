@@ -33,3 +33,7 @@ print(path.join(path_name2, "Data", "Documents", ""))
 path = "../Data/file/file2.txt"
 nowTime = datetime.datetime.now().strftime("%Y-%m-%d")
 os.rename(path, '../Data/file/file1.txt' + ".bak-%s" % nowTime)
+
+#######
+# 找到当前文件所处的目录
+print(os.path.dirname(__file__))
