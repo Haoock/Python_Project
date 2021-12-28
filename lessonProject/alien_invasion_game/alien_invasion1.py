@@ -1,7 +1,11 @@
 # 导入pygame模块
-import pygame, sys
+import pygame
+import sys
+
 from settings import Settings
 from ship import Ship
+import game_functions as gf
+from pygame.sprite import Group
 
 
 def run_game():
@@ -13,21 +17,17 @@ def run_game():
     screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height))
     pygame.display.set_caption("Alien Invasion")
     # 创建一艘飞船
-    ship = Ship(screen)
+    ship = Ship(ai_settings, screen)
+    # 创建一个用于存储子弹的编组
+    bullets = Group()
 
     # 程序主循环
     while True:
-        screen.fill(ai_settings.bg_color)
-        ship.blitme()
-        # 获取事件
-        for event in pygame.event.get():
-            # 判断是否为退出事件
-            if event.type == pygame.QUIT:
-                # 退出pygame
-                pygame.quit()
-                sys.exit()
-        # 绘制屏幕内容
-        pygame.display.flip()
+        gf.check_events(ai_settings, screen, ship, bullets)
+        ship.update()
+        gf.update_bullets(bullets)
+        print(len(bullets))
+        gf.update_screen(ai_settings, screen, ship, bullets)
 
 
 run_game()

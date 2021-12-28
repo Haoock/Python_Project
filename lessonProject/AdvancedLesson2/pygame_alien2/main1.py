@@ -1,8 +1,8 @@
 import sys
 import pygame
-from settings import Settings
-from ship import Ship
-import game_functions as gf
+from settings1 import Settings
+from ship1 import Ship
+import game_functions1 as gf
 
 
 def run_game():

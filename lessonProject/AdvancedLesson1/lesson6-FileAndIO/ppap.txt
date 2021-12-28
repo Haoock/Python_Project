@@ -1,7 +1,7 @@
-I have a pen,I have an apple.
-(Uh~)Apple-pen!
-I have a pen,I have pineapple.
-(Uh~)Pineapple-pen!
-Apple-pen~Pineapple-pen(Uh~)
+I have a pen, I have an apple.
+(Uh~) Apple-pen!
+I have a pen, I have pineapple.
+(Uh~) Pineapple-pen!
+Apple-pen~Pineapple-pen (Uh~)
 Pen-Pineapple-Apple-pen!
 Pen-Pineapple-Apple-pen!

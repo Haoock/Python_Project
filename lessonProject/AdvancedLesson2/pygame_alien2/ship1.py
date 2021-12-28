@@ -21,9 +21,9 @@ class Ship():
     def update(self):
         """根据移动标志来调整飞船的位置"""
         # 通过标志位并且还要限制飞船的位置
-        if self.move_right:
+        if self.move_right and self.ship_rect.right < self.screen_rect.right:
             self.ship_rect.centerx += 1
-        if self.move_left:
+        if self.move_left and self.ship_rect.left > 0:
             self.ship_rect.centerx -= 1
 
     def ship_blip(self):
