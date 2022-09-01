@@ -67,7 +67,7 @@ def practise1():
     turtle.exitonclick()
 
 
-# practise1()
+practise1()
 
 def practise2():
     turtle.screensize(800, 600, 'white')
@@ -146,4 +146,4 @@ def homework():
         turtle.right(90)
     turtle.exitonclick()
 
-homework()
+# homework()

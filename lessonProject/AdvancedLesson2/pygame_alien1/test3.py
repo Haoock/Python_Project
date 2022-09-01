@@ -4,10 +4,15 @@ import pygame
 
 
 def run_game():
+    # 初始化pygame
     pygame.init()
-    screen = pygame.display.set_mode([1200, 800])
-    pygame.display.set_caption("Alien Invasion")  # 设置窗口的标题
+    # 设置屏幕大小
+    screen = pygame.display.set_mode([800, 600])
+    # 设置窗口的标题
+    pygame.display.set_caption("Alien Invasion")
+    # 加载图片
     ship = pygame.image.load("ship.bmp")
+    # 设置背景颜色
     bg_color = (230, 230, 230)
     # 获取screen的区域坐标位置
     screen_rect = screen.get_rect()
@@ -25,5 +30,6 @@ def run_game():
         screen.fill(bg_color)
         screen.blit(ship, ship_rect)
         pygame.display.flip()
+
 
 run_game()

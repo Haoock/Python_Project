@@ -22,7 +22,7 @@ def last_homework1():
                 print()
 
 
-# last_homework1()
+last_homework1()
 
 
 def last_homework2():
@@ -38,7 +38,7 @@ def last_homework2():
     print(count)
 
 
-last_homework2()
+# last_homework2()
 
 # 关于回文数：lesson25种讲解了判断，自行完成完整的题目
 

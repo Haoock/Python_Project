@@ -236,4 +236,4 @@ def homework_turtle():
     turtle.end_fill()
     turtle.exitonclick()
 
-homework_turtle()
+# homework_turtle()

@@ -6,7 +6,7 @@ import sys
 
 def run_game():
     pygame.init()
-    screen = pygame.display.set_mode([1200, 800])
+    screen = pygame.display.set_mode([800, 600])
     pygame.display.set_caption("Alien Invasion")  # 设置窗口的标题
     ship = pygame.image.load("ship.bmp")
     bg_color = (230, 230, 230)
@@ -26,7 +26,12 @@ def run_game():
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RIGHT:
                     # 向右移动飞船
-                    ship_rect.centerx += 1
+                    ship_rect.centerx += 10
+                    ship_rect.centery -= 10
+                if event.key == pygame.K_LEFT:
+                    # 向左移动飞船
+                    ship_rect.centerx -= 10
+                    ship_rect.centery -= 10
         screen.fill(bg_color)
         screen.blit(ship, ship_rect)
         pygame.display.flip()
