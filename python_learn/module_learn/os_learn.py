@@ -60,7 +60,7 @@ else:
 # os.walk() 方法用于通过在目录树中游走输出在目录中的文件名，向上或者向下。
 # 它会返回三个参数：curDir，dirs，files
 # 默认情况下是采用自顶向下的方式进行扫描
-for curDir, dirs, files in os.walk(r"E:\python"):
+for curDir, dirs, files in os.walk(r"E:\py  thon"):
     print("====================")
     print("现在的目录：" + curDir)
     print("该目录下包含的子目录：" + str(dirs))
