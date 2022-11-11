@@ -4,6 +4,8 @@
 # @Function:
 # import sys_learn
 from collections import defaultdict
+from configparser_learn import import_test
+import_test()
 
 # str1 = "asdf"
 # str2 = str1
@@ -43,11 +45,11 @@ from collections import defaultdict
 # print(b)
 # sys_learn.main()
 
-node_dict = defaultdict(int)
-# node_dict["asdf"]["hahaha"] = 0
-# print(node_dict["asdf"]["hahaha"])
-node_name = ""
-for i in range(10):
-    node_dict["asdf"] += i if node_name != '' else 0
-print(node_dict["asdf"])
+# node_dict = defaultdict(int)
+# # node_dict["asdf"]["hahaha"] = 0
+# # print(node_dict["asdf"]["hahaha"])
+# node_name = ""
+# for i in range(10):
+#     node_dict["asdf"] += i if node_name != '' else 0
+# print(node_dict["asdf"])
 
