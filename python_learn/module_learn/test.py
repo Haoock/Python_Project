@@ -6,6 +6,8 @@
 from collections import defaultdict
 import random
 import base64
+from configparser_learn import import_test
+import_test()
 
 # str1 = "asdf"
 # str2 = str1
