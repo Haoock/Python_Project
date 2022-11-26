@@ -4,6 +4,8 @@
 # @Function:
 # import sys_learn
 from collections import defaultdict
+import random
+import base64
 
 # str1 = "asdf"
 # str2 = str1
@@ -43,11 +45,27 @@ from collections import defaultdict
 # print(b)
 # sys_learn.main()
 
-node_dict = defaultdict(int)
-# node_dict["asdf"]["hahaha"] = 0
-# print(node_dict["asdf"]["hahaha"])
-node_name = ""
-for i in range(10):
-    node_dict["asdf"] += i if node_name != '' else 0
-print(node_dict["asdf"])
+# node_dict = defaultdict(int)
+# # node_dict["asdf"]["hahaha"] = 0
+# # print(node_dict["asdf"]["hahaha"])
+# node_name = ""
+# for i in range(10):
+#     node_dict["asdf"] += i if node_name != '' else 0
+# print(node_dict["asdf"])
+x = base64.urlsafe_b64encode(b'EVNOTE')
+y = str(x, encoding="utf-8").strip('=')
+print(y)
 
+
+lst = []
+for i in range(26):
+    lst.append(chr(97 + i))
+    lst.append(chr(65 + i))
+
+random.shuffle(lst)
+print(lst)
+
+# input_string = input("Please Enter Your String：")
+# 然后开始处理这个字符串
+# for i in input_string:
+#     print("%d" % (lst.index(i) % 10), end="")

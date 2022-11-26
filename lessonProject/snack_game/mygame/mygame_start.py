@@ -1,5 +1,7 @@
-from mygame import *
-
+from mygame.mygame_main import MyGame
+from mygame.apple import Apple
+from mygame.snake import Snake
+from mygame.settings import *
 
 class PySnake(MyGame):
     """贪吃蛇游戏"""
